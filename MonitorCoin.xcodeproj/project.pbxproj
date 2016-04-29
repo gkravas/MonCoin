@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D653B08118F42C38007606CA /* BitrexMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653B08018F42C38007606CA /* BitrexMonitorViewController.m */; };
+		D653B08518F42E9A007606CA /* VGBitrexAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D653B08418F42E9A007606CA /* VGBitrexAPI.m */; };
+		D653B08918F698CE007606CA /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = D653B08818F698CE007606CA /* UIView+Borders.m */; };
+		D673BA8118EDAAD1004737F1 /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA7E18EDAAD1004737F1 /* UIView+Borders.m */; };
+		D673BA8218EDAAD1004737F1 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA8018EDAAD1004737F1 /* UIColor+HexString.m */; };
+		D673BA8B18EEBBE9004737F1 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA8618EEBBE9004737F1 /* MFSideMenuContainerViewController.m */; };
+		D673BA8C18EEBBE9004737F1 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA8818EEBBE9004737F1 /* MFSideMenuShadow.m */; };
+		D673BA8D18EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA8A18EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.m */; };
+		D673BA9118EEBED4004737F1 /* CRGradientNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA9018EEBED4004737F1 /* CRGradientNavigationBar.m */; };
+		D673BA9418EED0D1004737F1 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA9318EED0D1004737F1 /* MainMenuViewController.m */; };
+		D673BA9A18F027BF004737F1 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA9918F027BF004737F1 /* UIAlertView+Blocks.m */; };
+		D673BA9D18F1C5BF004737F1 /* MarketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA9C18F1C5BF004737F1 /* MarketModel.m */; };
+		D673BAA018F2A1EF004737F1 /* MintpalMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BA9F18F2A1EF004737F1 /* MintpalMonitorViewController.m */; };
+		D673BAA418F2A875004737F1 /* VGMintpalAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BAA318F2A875004737F1 /* VGMintpalAPI.m */; };
+		D673BAA818F2B43C004737F1 /* PoloniexMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BAA718F2B43C004737F1 /* PoloniexMonitorViewController.m */; };
+		D673BAAC18F2B560004737F1 /* VGPoloniexAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D673BAAB18F2B560004737F1 /* VGPoloniexAPI.m */; };
+		D6926CB018E7620E001FC650 /* OpenOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CAF18E7620E001FC650 /* OpenOrdersViewController.m */; };
+		D6926CB418E767CC001FC650 /* OpenOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CB318E767CC001FC650 /* OpenOrderModel.m */; };
+		D6926CB718E768A8001FC650 /* OpenOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CB618E768A8001FC650 /* OpenOrderCell.m */; };
+		D6926CBA18E77931001FC650 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CB918E77931001FC650 /* Utilities.m */; };
+		D6926CBD18E851DA001FC650 /* MarketTradeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CBC18E851DA001FC650 /* MarketTradeModel.m */; };
+		D6926CC018E85247001FC650 /* TradeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CBF18E85247001FC650 /* TradeCell.m */; };
+		D6926CC318E8529A001FC650 /* TradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CC218E8529A001FC650 /* TradesViewController.m */; };
+		D6926CC618E89D61001FC650 /* WalletModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6926CC518E89D61001FC650 /* WalletModel.m */; };
+		D697008518FF06D80095F99A /* CoinMarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D697008418FF06D80095F99A /* CoinMarketViewController.m */; };
+		D69701AD18FFBA5D0095F99A /* CoinMarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D69701AC18FFBA5D0095F99A /* CoinMarketCell.m */; };
+		D69701B018FFBAFC0095F99A /* CoinMarketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D69701AF18FFBAFC0095F99A /* CoinMarketModel.m */; };
+		D69EA77D18E219F500ACC63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69EA77C18E219F500ACC63F /* Foundation.framework */; };
+		D69EA77F18E219F500ACC63F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69EA77E18E219F500ACC63F /* CoreGraphics.framework */; };
+		D69EA78118E219F500ACC63F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69EA78018E219F500ACC63F /* UIKit.framework */; };
+		D69EA78718E219F500ACC63F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D69EA78518E219F500ACC63F /* InfoPlist.strings */; };
+		D69EA78918E219F500ACC63F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA78818E219F500ACC63F /* main.m */; };
+		D69EA78D18E219F500ACC63F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA78C18E219F500ACC63F /* AppDelegate.m */; };
+		D69EA79018E219F500ACC63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69EA78E18E219F500ACC63F /* Main.storyboard */; };
+		D69EA79F18E219F500ACC63F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69EA79E18E219F500ACC63F /* XCTest.framework */; };
+		D69EA7A018E219F500ACC63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69EA77C18E219F500ACC63F /* Foundation.framework */; };
+		D69EA7A118E219F500ACC63F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69EA78018E219F500ACC63F /* UIKit.framework */; };
+		D69EA7A918E219F600ACC63F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D69EA7A718E219F600ACC63F /* InfoPlist.strings */; };
+		D69EA7AB18E219F600ACC63F /* MonCoinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7AA18E219F600ACC63F /* MonCoinTests.m */; };
+		D69EA7B718E21D2E00ACC63F /* ACDCryptsyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7B618E21D2E00ACC63F /* ACDCryptsyAPI.m */; };
+		D69EA7CC18E21D9B00ACC63F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7BA18E21D9B00ACC63F /* AFHTTPRequestOperation.m */; };
+		D69EA7CD18E21D9B00ACC63F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7BC18E21D9B00ACC63F /* AFHTTPRequestOperationManager.m */; };
+		D69EA7CE18E21D9B00ACC63F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7BE18E21D9B00ACC63F /* AFHTTPSessionManager.m */; };
+		D69EA7CF18E21D9B00ACC63F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7C118E21D9B00ACC63F /* AFNetworkReachabilityManager.m */; };
+		D69EA7D018E21D9B00ACC63F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7C318E21D9B00ACC63F /* AFSecurityPolicy.m */; };
+		D69EA7D118E21D9B00ACC63F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7C518E21D9B00ACC63F /* AFURLConnectionOperation.m */; };
+		D69EA7D218E21D9B00ACC63F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7C718E21D9B00ACC63F /* AFURLRequestSerialization.m */; };
+		D69EA7D318E21D9B00ACC63F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7C918E21D9B00ACC63F /* AFURLResponseSerialization.m */; };
+		D69EA7D418E21D9B00ACC63F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7CB18E21D9B00ACC63F /* AFURLSessionManager.m */; };
+		D69EA7D718E21E5F00ACC63F /* CryptsyMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7D618E21E5F00ACC63F /* CryptsyMonitorViewController.m */; };
+		D69EA7DB18E21E8500ACC63F /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7DA18E21E8500ACC63F /* SettingsTableViewController.m */; };
+		D69EA7DF18E2259800ACC63F /* WalletInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7DE18E2259800ACC63F /* WalletInfoCell.m */; };
+		D69EA7E918E2B51A00ACC63F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D69EA7E818E2B51A00ACC63F /* MBProgressHUD.m */; };
+		D69EA7EB18E2CBD200ACC63F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69EA7EA18E2CBD200ACC63F /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D69EA7A218E219F600ACC63F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D69EA77118E219F500ACC63F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D69EA77818E219F500ACC63F;
+			remoteInfo = MonCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D653B07F18F42C38007606CA /* BitrexMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitrexMonitorViewController.h; sourceTree = "<group>"; };
+		D653B08018F42C38007606CA /* BitrexMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitrexMonitorViewController.m; sourceTree = "<group>"; };
+		D653B08318F42E9A007606CA /* VGBitrexAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGBitrexAPI.h; sourceTree = "<group>"; };
+		D653B08418F42E9A007606CA /* VGBitrexAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGBitrexAPI.m; sourceTree = "<group>"; };
+		D653B08718F698CE007606CA /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		D653B08818F698CE007606CA /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
+		D673BA7D18EDAAD0004737F1 /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		D673BA7E18EDAAD1004737F1 /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
+		D673BA7F18EDAAD1004737F1 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		D673BA8018EDAAD1004737F1 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		D673BA8418EEBBE9004737F1 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
+		D673BA8518EEBBE9004737F1 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		D673BA8618EEBBE9004737F1 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		D673BA8718EEBBE9004737F1 /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuShadow.h; sourceTree = "<group>"; };
+		D673BA8818EEBBE9004737F1 /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
+		D673BA8918EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		D673BA8A18EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
+		D673BA8F18EEBED4004737F1 /* CRGradientNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGradientNavigationBar.h; sourceTree = "<group>"; };
+		D673BA9018EEBED4004737F1 /* CRGradientNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGradientNavigationBar.m; sourceTree = "<group>"; };
+		D673BA9218EED0D1004737F1 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		D673BA9318EED0D1004737F1 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		D673BA9818F027BF004737F1 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		D673BA9918F027BF004737F1 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		D673BA9B18F1C5BF004737F1 /* MarketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketModel.h; sourceTree = "<group>"; };
+		D673BA9C18F1C5BF004737F1 /* MarketModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketModel.m; sourceTree = "<group>"; };
+		D673BA9E18F2A1EF004737F1 /* MintpalMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MintpalMonitorViewController.h; sourceTree = "<group>"; };
+		D673BA9F18F2A1EF004737F1 /* MintpalMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MintpalMonitorViewController.m; sourceTree = "<group>"; };
+		D673BAA218F2A875004737F1 /* VGMintpalAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGMintpalAPI.h; sourceTree = "<group>"; };
+		D673BAA318F2A875004737F1 /* VGMintpalAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGMintpalAPI.m; sourceTree = "<group>"; };
+		D673BAA618F2B43C004737F1 /* PoloniexMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoloniexMonitorViewController.h; sourceTree = "<group>"; };
+		D673BAA718F2B43C004737F1 /* PoloniexMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoloniexMonitorViewController.m; sourceTree = "<group>"; };
+		D673BAAA18F2B560004737F1 /* VGPoloniexAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGPoloniexAPI.h; sourceTree = "<group>"; };
+		D673BAAB18F2B560004737F1 /* VGPoloniexAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGPoloniexAPI.m; sourceTree = "<group>"; };
+		D6889A901CD3F3E000AAF3C1 /* Exchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exchange.h; sourceTree = "<group>"; };
+		D6926CAE18E7620E001FC650 /* OpenOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOrdersViewController.h; sourceTree = "<group>"; };
+		D6926CAF18E7620E001FC650 /* OpenOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOrdersViewController.m; sourceTree = "<group>"; };
+		D6926CB218E767CC001FC650 /* OpenOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOrderModel.h; sourceTree = "<group>"; };
+		D6926CB318E767CC001FC650 /* OpenOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOrderModel.m; sourceTree = "<group>"; };
+		D6926CB518E768A8001FC650 /* OpenOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenOrderCell.h; sourceTree = "<group>"; };
+		D6926CB618E768A8001FC650 /* OpenOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenOrderCell.m; sourceTree = "<group>"; };
+		D6926CB818E77931001FC650 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		D6926CB918E77931001FC650 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		D6926CBB18E851DA001FC650 /* MarketTradeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketTradeModel.h; sourceTree = "<group>"; };
+		D6926CBC18E851DA001FC650 /* MarketTradeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketTradeModel.m; sourceTree = "<group>"; };
+		D6926CBE18E85247001FC650 /* TradeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeCell.h; sourceTree = "<group>"; };
+		D6926CBF18E85247001FC650 /* TradeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeCell.m; sourceTree = "<group>"; };
+		D6926CC118E8529A001FC650 /* TradesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradesViewController.h; sourceTree = "<group>"; };
+		D6926CC218E8529A001FC650 /* TradesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradesViewController.m; sourceTree = "<group>"; };
+		D6926CC418E89D61001FC650 /* WalletModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletModel.h; sourceTree = "<group>"; };
+		D6926CC518E89D61001FC650 /* WalletModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletModel.m; sourceTree = "<group>"; };
+		D697008318FF06D80095F99A /* CoinMarketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinMarketViewController.h; sourceTree = "<group>"; };
+		D697008418FF06D80095F99A /* CoinMarketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinMarketViewController.m; sourceTree = "<group>"; };
+		D69701AB18FFBA5D0095F99A /* CoinMarketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinMarketCell.h; sourceTree = "<group>"; };
+		D69701AC18FFBA5D0095F99A /* CoinMarketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinMarketCell.m; sourceTree = "<group>"; };
+		D69701AE18FFBAFC0095F99A /* CoinMarketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinMarketModel.h; sourceTree = "<group>"; };
+		D69701AF18FFBAFC0095F99A /* CoinMarketModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinMarketModel.m; sourceTree = "<group>"; };
+		D69EA77918E219F500ACC63F /* MonitorCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69EA77C18E219F500ACC63F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D69EA77E18E219F500ACC63F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D69EA78018E219F500ACC63F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D69EA78418E219F500ACC63F /* MonitorCoin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonitorCoin-Info.plist"; sourceTree = "<group>"; };
+		D69EA78618E219F500ACC63F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D69EA78818E219F500ACC63F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D69EA78A18E219F500ACC63F /* MonitorCoin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonitorCoin-Prefix.pch"; sourceTree = "<group>"; };
+		D69EA78B18E219F500ACC63F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D69EA78C18E219F500ACC63F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D69EA78F18E219F500ACC63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D69EA79D18E219F500ACC63F /* MonitorCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonitorCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69EA79E18E219F500ACC63F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D69EA7A618E219F600ACC63F /* MonitorCoinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonitorCoinTests-Info.plist"; sourceTree = "<group>"; };
+		D69EA7A818E219F600ACC63F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D69EA7AA18E219F600ACC63F /* MonCoinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonCoinTests.m; sourceTree = "<group>"; };
+		D69EA7B518E21D2E00ACC63F /* ACDCryptsyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDCryptsyAPI.h; sourceTree = "<group>"; };
+		D69EA7B618E21D2E00ACC63F /* ACDCryptsyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDCryptsyAPI.m; sourceTree = "<group>"; };
+		D69EA7B918E21D9B00ACC63F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		D69EA7BA18E21D9B00ACC63F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		D69EA7BB18E21D9B00ACC63F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		D69EA7BC18E21D9B00ACC63F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		D69EA7BD18E21D9B00ACC63F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		D69EA7BE18E21D9B00ACC63F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		D69EA7BF18E21D9B00ACC63F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		D69EA7C018E21D9B00ACC63F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		D69EA7C118E21D9B00ACC63F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		D69EA7C218E21D9B00ACC63F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		D69EA7C318E21D9B00ACC63F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		D69EA7C418E21D9B00ACC63F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		D69EA7C518E21D9B00ACC63F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		D69EA7C618E21D9B00ACC63F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		D69EA7C718E21D9B00ACC63F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		D69EA7C818E21D9B00ACC63F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		D69EA7C918E21D9B00ACC63F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		D69EA7CA18E21D9B00ACC63F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		D69EA7CB18E21D9B00ACC63F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		D69EA7D518E21E5F00ACC63F /* CryptsyMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptsyMonitorViewController.h; sourceTree = "<group>"; };
+		D69EA7D618E21E5F00ACC63F /* CryptsyMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptsyMonitorViewController.m; sourceTree = "<group>"; };
+		D69EA7D918E21E8500ACC63F /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		D69EA7DA18E21E8500ACC63F /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		D69EA7DD18E2259800ACC63F /* WalletInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletInfoCell.h; sourceTree = "<group>"; };
+		D69EA7DE18E2259800ACC63F /* WalletInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletInfoCell.m; sourceTree = "<group>"; };
+		D69EA7E718E2B51A00ACC63F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D69EA7E818E2B51A00ACC63F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D69EA7EA18E2CBD200ACC63F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MonCoin/Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D69EA77618E219F500ACC63F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69EA77F18E219F500ACC63F /* CoreGraphics.framework in Frameworks */,
+				D69EA78118E219F500ACC63F /* UIKit.framework in Frameworks */,
+				D69EA77D18E219F500ACC63F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69EA79A18E219F500ACC63F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69EA79F18E219F500ACC63F /* XCTest.framework in Frameworks */,
+				D69EA7A118E219F500ACC63F /* UIKit.framework in Frameworks */,
+				D69EA7A018E219F500ACC63F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D653B08218F42E7F007606CA /* BitrexAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D653B08318F42E9A007606CA /* VGBitrexAPI.h */,
+				D653B08418F42E9A007606CA /* VGBitrexAPI.m */,
+			);
+			name = BitrexAPI;
+			sourceTree = "<group>";
+		};
+		D653B08618F69245007606CA /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		D673BA8318EEBBE9004737F1 /* MFSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D673BA8418EEBBE9004737F1 /* MFSideMenu.h */,
+				D673BA8518EEBBE9004737F1 /* MFSideMenuContainerViewController.h */,
+				D673BA8618EEBBE9004737F1 /* MFSideMenuContainerViewController.m */,
+				D673BA8718EEBBE9004737F1 /* MFSideMenuShadow.h */,
+				D673BA8818EEBBE9004737F1 /* MFSideMenuShadow.m */,
+				D673BA8918EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.h */,
+				D673BA8A18EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.m */,
+			);
+			path = MFSideMenu;
+			sourceTree = "<group>";
+		};
+		D673BA8E18EEBED4004737F1 /* CRGradientNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				D673BA8F18EEBED4004737F1 /* CRGradientNavigationBar.h */,
+				D673BA9018EEBED4004737F1 /* CRGradientNavigationBar.m */,
+			);
+			path = CRGradientNavigationBar;
+			sourceTree = "<group>";
+		};
+		D673BAA118F2A852004737F1 /* MintpalAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D673BAA218F2A875004737F1 /* VGMintpalAPI.h */,
+				D673BAA318F2A875004737F1 /* VGMintpalAPI.m */,
+			);
+			name = MintpalAPI;
+			sourceTree = "<group>";
+		};
+		D673BAA518F2AB0B004737F1 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA7D518E21E5F00ACC63F /* CryptsyMonitorViewController.h */,
+				D69EA7D618E21E5F00ACC63F /* CryptsyMonitorViewController.m */,
+				D673BA9E18F2A1EF004737F1 /* MintpalMonitorViewController.h */,
+				D673BA9F18F2A1EF004737F1 /* MintpalMonitorViewController.m */,
+				D673BAA618F2B43C004737F1 /* PoloniexMonitorViewController.h */,
+				D673BAA718F2B43C004737F1 /* PoloniexMonitorViewController.m */,
+				D653B07F18F42C38007606CA /* BitrexMonitorViewController.h */,
+				D653B08018F42C38007606CA /* BitrexMonitorViewController.m */,
+				D697008318FF06D80095F99A /* CoinMarketViewController.h */,
+				D697008418FF06D80095F99A /* CoinMarketViewController.m */,
+				D6889A901CD3F3E000AAF3C1 /* Exchange.h */,
+			);
+			name = Exchanges;
+			sourceTree = "<group>";
+		};
+		D673BAA918F2B547004737F1 /* PoloniexAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D673BAAA18F2B560004737F1 /* VGPoloniexAPI.h */,
+				D673BAAB18F2B560004737F1 /* VGPoloniexAPI.m */,
+			);
+			name = PoloniexAPI;
+			sourceTree = "<group>";
+		};
+		D6926CB118E7678F001FC650 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6926CB218E767CC001FC650 /* OpenOrderModel.h */,
+				D6926CB318E767CC001FC650 /* OpenOrderModel.m */,
+				D6926CBB18E851DA001FC650 /* MarketTradeModel.h */,
+				D6926CBC18E851DA001FC650 /* MarketTradeModel.m */,
+				D6926CC418E89D61001FC650 /* WalletModel.h */,
+				D6926CC518E89D61001FC650 /* WalletModel.m */,
+				D673BA9B18F1C5BF004737F1 /* MarketModel.h */,
+				D673BA9C18F1C5BF004737F1 /* MarketModel.m */,
+				D69701AE18FFBAFC0095F99A /* CoinMarketModel.h */,
+				D69701AF18FFBAFC0095F99A /* CoinMarketModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D69EA77018E219F500ACC63F = {
+			isa = PBXGroup;
+			children = (
+				D69EA78218E219F500ACC63F /* MonCoin */,
+				D69EA7EA18E2CBD200ACC63F /* Images.xcassets */,
+				D69EA7A418E219F600ACC63F /* MonCoinTests */,
+				D69EA77B18E219F500ACC63F /* Frameworks */,
+				D69EA77A18E219F500ACC63F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D69EA77A18E219F500ACC63F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA77918E219F500ACC63F /* MonitorCoin.app */,
+				D69EA79D18E219F500ACC63F /* MonitorCoinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D69EA77B18E219F500ACC63F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA77C18E219F500ACC63F /* Foundation.framework */,
+				D69EA77E18E219F500ACC63F /* CoreGraphics.framework */,
+				D69EA78018E219F500ACC63F /* UIKit.framework */,
+				D69EA79E18E219F500ACC63F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D69EA78218E219F500ACC63F /* MonCoin */ = {
+			isa = PBXGroup;
+			children = (
+				D653B08618F69245007606CA /* Buttons */,
+				D653B08218F42E7F007606CA /* BitrexAPI */,
+				D69EA7B418E21D2E00ACC63F /* ACDCryptsyAPI */,
+				D673BAA918F2B547004737F1 /* PoloniexAPI */,
+				D673BAA118F2A852004737F1 /* MintpalAPI */,
+				D673BA8E18EEBED4004737F1 /* CRGradientNavigationBar */,
+				D673BA8318EEBBE9004737F1 /* MFSideMenu */,
+				D6926CB118E7678F001FC650 /* Models */,
+				D69EA7E318E2B41100ACC63F /* Core */,
+				D69EA7DC18E2256900ACC63F /* Cells */,
+				D69EA7D818E21E6F00ACC63F /* Controllers */,
+				D69EA7B818E21D9B00ACC63F /* AFNetworking */,
+				D69EA78B18E219F500ACC63F /* AppDelegate.h */,
+				D69EA78C18E219F500ACC63F /* AppDelegate.m */,
+				D69EA78E18E219F500ACC63F /* Main.storyboard */,
+				D69EA78318E219F500ACC63F /* Supporting Files */,
+			);
+			path = MonCoin;
+			sourceTree = "<group>";
+		};
+		D69EA78318E219F500ACC63F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA78418E219F500ACC63F /* MonitorCoin-Info.plist */,
+				D69EA78518E219F500ACC63F /* InfoPlist.strings */,
+				D69EA78818E219F500ACC63F /* main.m */,
+				D69EA78A18E219F500ACC63F /* MonitorCoin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D69EA7A418E219F600ACC63F /* MonCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA7AA18E219F600ACC63F /* MonCoinTests.m */,
+				D69EA7A518E219F600ACC63F /* Supporting Files */,
+			);
+			path = MonCoinTests;
+			sourceTree = "<group>";
+		};
+		D69EA7A518E219F600ACC63F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA7A618E219F600ACC63F /* MonitorCoinTests-Info.plist */,
+				D69EA7A718E219F600ACC63F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D69EA7B418E21D2E00ACC63F /* ACDCryptsyAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA7B518E21D2E00ACC63F /* ACDCryptsyAPI.h */,
+				D69EA7B618E21D2E00ACC63F /* ACDCryptsyAPI.m */,
+			);
+			path = ACDCryptsyAPI;
+			sourceTree = "<group>";
+		};
+		D69EA7B818E21D9B00ACC63F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA7B918E21D9B00ACC63F /* AFHTTPRequestOperation.h */,
+				D69EA7BA18E21D9B00ACC63F /* AFHTTPRequestOperation.m */,
+				D69EA7BB18E21D9B00ACC63F /* AFHTTPRequestOperationManager.h */,
+				D69EA7BC18E21D9B00ACC63F /* AFHTTPRequestOperationManager.m */,
+				D69EA7BD18E21D9B00ACC63F /* AFHTTPSessionManager.h */,
+				D69EA7BE18E21D9B00ACC63F /* AFHTTPSessionManager.m */,
+				D69EA7BF18E21D9B00ACC63F /* AFNetworking.h */,
+				D69EA7C018E21D9B00ACC63F /* AFNetworkReachabilityManager.h */,
+				D69EA7C118E21D9B00ACC63F /* AFNetworkReachabilityManager.m */,
+				D69EA7C218E21D9B00ACC63F /* AFSecurityPolicy.h */,
+				D69EA7C318E21D9B00ACC63F /* AFSecurityPolicy.m */,
+				D69EA7C418E21D9B00ACC63F /* AFURLConnectionOperation.h */,
+				D69EA7C518E21D9B00ACC63F /* AFURLConnectionOperation.m */,
+				D69EA7C618E21D9B00ACC63F /* AFURLRequestSerialization.h */,
+				D69EA7C718E21D9B00ACC63F /* AFURLRequestSerialization.m */,
+				D69EA7C818E21D9B00ACC63F /* AFURLResponseSerialization.h */,
+				D69EA7C918E21D9B00ACC63F /* AFURLResponseSerialization.m */,
+				D69EA7CA18E21D9B00ACC63F /* AFURLSessionManager.h */,
+				D69EA7CB18E21D9B00ACC63F /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		D69EA7D818E21E6F00ACC63F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D673BAA518F2AB0B004737F1 /* Exchanges */,
+				D69EA7D918E21E8500ACC63F /* SettingsTableViewController.h */,
+				D69EA7DA18E21E8500ACC63F /* SettingsTableViewController.m */,
+				D6926CAE18E7620E001FC650 /* OpenOrdersViewController.h */,
+				D6926CAF18E7620E001FC650 /* OpenOrdersViewController.m */,
+				D6926CC118E8529A001FC650 /* TradesViewController.h */,
+				D6926CC218E8529A001FC650 /* TradesViewController.m */,
+				D673BA9218EED0D1004737F1 /* MainMenuViewController.h */,
+				D673BA9318EED0D1004737F1 /* MainMenuViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D69EA7DC18E2256900ACC63F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D69EA7DD18E2259800ACC63F /* WalletInfoCell.h */,
+				D69EA7DE18E2259800ACC63F /* WalletInfoCell.m */,
+				D6926CB518E768A8001FC650 /* OpenOrderCell.h */,
+				D6926CB618E768A8001FC650 /* OpenOrderCell.m */,
+				D6926CBE18E85247001FC650 /* TradeCell.h */,
+				D6926CBF18E85247001FC650 /* TradeCell.m */,
+				D69701AB18FFBA5D0095F99A /* CoinMarketCell.h */,
+				D69701AC18FFBA5D0095F99A /* CoinMarketCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D69EA7E318E2B41100ACC63F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D653B08718F698CE007606CA /* UIView+Borders.h */,
+				D653B08818F698CE007606CA /* UIView+Borders.m */,
+				D673BA9818F027BF004737F1 /* UIAlertView+Blocks.h */,
+				D673BA9918F027BF004737F1 /* UIAlertView+Blocks.m */,
+				D673BA7D18EDAAD0004737F1 /* UIView+Borders.h */,
+				D673BA7E18EDAAD1004737F1 /* UIView+Borders.m */,
+				D673BA7F18EDAAD1004737F1 /* UIColor+HexString.h */,
+				D673BA8018EDAAD1004737F1 /* UIColor+HexString.m */,
+				D69EA7E718E2B51A00ACC63F /* MBProgressHUD.h */,
+				D69EA7E818E2B51A00ACC63F /* MBProgressHUD.m */,
+				D6926CB818E77931001FC650 /* Utilities.h */,
+				D6926CB918E77931001FC650 /* Utilities.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D69EA77818E219F500ACC63F /* MonitorCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69EA7AE18E219F600ACC63F /* Build configuration list for PBXNativeTarget "MonitorCoin" */;
+			buildPhases = (
+				D69EA77518E219F500ACC63F /* Sources */,
+				D69EA77618E219F500ACC63F /* Frameworks */,
+				D69EA77718E219F500ACC63F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorCoin;
+			productName = MonCoin;
+			productReference = D69EA77918E219F500ACC63F /* MonitorCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D69EA79C18E219F500ACC63F /* MonitorCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69EA7B118E219F600ACC63F /* Build configuration list for PBXNativeTarget "MonitorCoinTests" */;
+			buildPhases = (
+				D69EA79918E219F500ACC63F /* Sources */,
+				D69EA79A18E219F500ACC63F /* Frameworks */,
+				D69EA79B18E219F500ACC63F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D69EA7A318E219F600ACC63F /* PBXTargetDependency */,
+			);
+			name = MonitorCoinTests;
+			productName = MonCoinTests;
+			productReference = D69EA79D18E219F500ACC63F /* MonitorCoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D69EA77118E219F500ACC63F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "George Kravas";
+				TargetAttributes = {
+					D69EA77818E219F500ACC63F = {
+						DevelopmentTeam = 35QK67UP8F;
+					};
+					D69EA79C18E219F500ACC63F = {
+						TestTargetID = D69EA77818E219F500ACC63F;
+					};
+				};
+			};
+			buildConfigurationList = D69EA77418E219F500ACC63F /* Build configuration list for PBXProject "MonitorCoin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D69EA77018E219F500ACC63F;
+			productRefGroup = D69EA77A18E219F500ACC63F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D69EA77818E219F500ACC63F /* MonitorCoin */,
+				D69EA79C18E219F500ACC63F /* MonitorCoinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D69EA77718E219F500ACC63F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69EA7EB18E2CBD200ACC63F /* Images.xcassets in Resources */,
+				D69EA78718E219F500ACC63F /* InfoPlist.strings in Resources */,
+				D69EA79018E219F500ACC63F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69EA79B18E219F500ACC63F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69EA7A918E219F600ACC63F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D69EA77518E219F500ACC63F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69EA7DB18E21E8500ACC63F /* SettingsTableViewController.m in Sources */,
+				D69EA7D118E21D9B00ACC63F /* AFURLConnectionOperation.m in Sources */,
+				D6926CC618E89D61001FC650 /* WalletModel.m in Sources */,
+				D673BA9418EED0D1004737F1 /* MainMenuViewController.m in Sources */,
+				D69EA7CC18E21D9B00ACC63F /* AFHTTPRequestOperation.m in Sources */,
+				D69EA7CF18E21D9B00ACC63F /* AFNetworkReachabilityManager.m in Sources */,
+				D6926CB718E768A8001FC650 /* OpenOrderCell.m in Sources */,
+				D697008518FF06D80095F99A /* CoinMarketViewController.m in Sources */,
+				D673BAA818F2B43C004737F1 /* PoloniexMonitorViewController.m in Sources */,
+				D69EA7D418E21D9B00ACC63F /* AFURLSessionManager.m in Sources */,
+				D673BAAC18F2B560004737F1 /* VGPoloniexAPI.m in Sources */,
+				D673BA8B18EEBBE9004737F1 /* MFSideMenuContainerViewController.m in Sources */,
+				D673BA9A18F027BF004737F1 /* UIAlertView+Blocks.m in Sources */,
+				D673BA9118EEBED4004737F1 /* CRGradientNavigationBar.m in Sources */,
+				D69EA7D218E21D9B00ACC63F /* AFURLRequestSerialization.m in Sources */,
+				D69EA7D318E21D9B00ACC63F /* AFURLResponseSerialization.m in Sources */,
+				D6926CB018E7620E001FC650 /* OpenOrdersViewController.m in Sources */,
+				D653B08518F42E9A007606CA /* VGBitrexAPI.m in Sources */,
+				D69701B018FFBAFC0095F99A /* CoinMarketModel.m in Sources */,
+				D6926CB418E767CC001FC650 /* OpenOrderModel.m in Sources */,
+				D69EA7E918E2B51A00ACC63F /* MBProgressHUD.m in Sources */,
+				D673BA8218EDAAD1004737F1 /* UIColor+HexString.m in Sources */,
+				D673BAA418F2A875004737F1 /* VGMintpalAPI.m in Sources */,
+				D69EA78D18E219F500ACC63F /* AppDelegate.m in Sources */,
+				D69EA7CD18E21D9B00ACC63F /* AFHTTPRequestOperationManager.m in Sources */,
+				D673BA8C18EEBBE9004737F1 /* MFSideMenuShadow.m in Sources */,
+				D653B08918F698CE007606CA /* UIView+Borders.m in Sources */,
+				D673BA8D18EEBBE9004737F1 /* UIViewController+MFSideMenuAdditions.m in Sources */,
+				D69EA7D018E21D9B00ACC63F /* AFSecurityPolicy.m in Sources */,
+				D673BA9D18F1C5BF004737F1 /* MarketModel.m in Sources */,
+				D6926CBD18E851DA001FC650 /* MarketTradeModel.m in Sources */,
+				D6926CBA18E77931001FC650 /* Utilities.m in Sources */,
+				D6926CC318E8529A001FC650 /* TradesViewController.m in Sources */,
+				D69EA7B718E21D2E00ACC63F /* ACDCryptsyAPI.m in Sources */,
+				D69EA78918E219F500ACC63F /* main.m in Sources */,
+				D653B08118F42C38007606CA /* BitrexMonitorViewController.m in Sources */,
+				D69EA7D718E21E5F00ACC63F /* CryptsyMonitorViewController.m in Sources */,
+				D69701AD18FFBA5D0095F99A /* CoinMarketCell.m in Sources */,
+				D6926CC018E85247001FC650 /* TradeCell.m in Sources */,
+				D69EA7DF18E2259800ACC63F /* WalletInfoCell.m in Sources */,
+				D69EA7CE18E21D9B00ACC63F /* AFHTTPSessionManager.m in Sources */,
+				D673BA8118EDAAD1004737F1 /* UIView+Borders.m in Sources */,
+				D673BAA018F2A1EF004737F1 /* MintpalMonitorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69EA79918E219F500ACC63F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69EA7AB18E219F600ACC63F /* MonCoinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D69EA7A318E219F600ACC63F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D69EA77818E219F500ACC63F /* MonitorCoin */;
+			targetProxy = D69EA7A218E219F600ACC63F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D69EA78518E219F500ACC63F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69EA78618E219F500ACC63F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D69EA78E18E219F500ACC63F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69EA78F18E219F500ACC63F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D69EA7A718E219F600ACC63F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69EA7A818E219F600ACC63F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D69EA7AC18E219F600ACC63F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D69EA7AD18E219F600ACC63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D69EA7AF18E219F600ACC63F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonCoin/MonitorCoin-Prefix.pch";
+				INFOPLIST_FILE = "MonCoin/MonitorCoin-Info.plist";
+				PRODUCT_NAME = MonitorCoin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D69EA7B018E219F600ACC63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: VentureGeeks Trading Ltd. (35QK67UP8F)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonCoin/MonitorCoin-Prefix.pch";
+				INFOPLIST_FILE = "MonCoin/MonitorCoin-Info.plist";
+				PRODUCT_NAME = MonitorCoin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D69EA7B218E219F600ACC63F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MonCoin.app/MonCoin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonCoin/MonCoin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MonCoinTests/MonitorCoinTests-Info.plist";
+				PRODUCT_NAME = MonitorCoinTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D69EA7B318E219F600ACC63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MonCoin.app/MonCoin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MonCoin/MonCoin-Prefix.pch";
+				INFOPLIST_FILE = "MonCoinTests/MonitorCoinTests-Info.plist";
+				PRODUCT_NAME = MonitorCoinTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D69EA77418E219F500ACC63F /* Build configuration list for PBXProject "MonitorCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69EA7AC18E219F600ACC63F /* Debug */,
+				D69EA7AD18E219F600ACC63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69EA7AE18E219F600ACC63F /* Build configuration list for PBXNativeTarget "MonitorCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69EA7AF18E219F600ACC63F /* Debug */,
+				D69EA7B018E219F600ACC63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69EA7B118E219F600ACC63F /* Build configuration list for PBXNativeTarget "MonitorCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69EA7B218E219F600ACC63F /* Debug */,
+				D69EA7B318E219F600ACC63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D69EA77118E219F500ACC63F /* Project object */;
+}

@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#define BITREX_API_KEY @"bitrex_api_key"
+#define CRYPTSY_APP_KEY @"crytsy_api_key"
+#define POLONIEX_API_KEY @"poloniex_api_key"
+#define POLONIEX_API_SECRET @"poloniex_api_secret"
+#define CRYPTSY_APPLICATION_KEY @"HJHIFZUNbEisBlVaZvwNmzx7qrOdb4CI1c057nuw"
+#define SECTION_HEIGHT 34
+#define ROW_HEIGHT 172
+#define PREV_MARKETS_DATA @"prev_markets_data"
+#define PREV_TOTAL @"prev_total"
+
+typedef enum {
+	Sell,
+    Buy
+} TransactionType;
+
+typedef enum {
+	BTC,
+    USD,
+} Currency;
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Utilities.h"
+#endif
